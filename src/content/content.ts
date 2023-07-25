@@ -1,3 +1,4 @@
+import { getApiResponse } from '../api/openaiapi';
 const lfToBr = (text: string) => {
   return text.replace(/\n/g, '<br>');
 };
@@ -22,9 +23,9 @@ chrome.runtime.onMessage.addListener(async function(request, sender, sendRespons
         data.totalTokens = response.usage.total_tokens;
       }
 
-      chatgptCard.updateData(data);
-      chatgptCard.updateCursor(rect.left, rect.bottom);
-      chatgptCard.enable();
+      window.chatgptCard.updateData(data);
+      window.chatgptCard.updateCursor(rect.left, rect.bottom);
+      window.chatgptCard.enable();
     }
   }
 });

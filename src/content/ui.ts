@@ -79,6 +79,6 @@ class ChatGptCard implements IChatGptCard {
 }
 
 window.addEventListener("load", function() {
-  chatgptCard = new ChatGptCard();
-  chatgptCard.disable();
+  window.chatgptCard = new ChatGptCard();
+  window.chatgptCard.disable();
 });

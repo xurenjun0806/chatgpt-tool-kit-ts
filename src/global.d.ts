@@ -17,3 +17,7 @@ declare type ChatGptCardData = {
   content: string;
   totalTokens: number;
 }
+
+declare interface Window {
+  chatgptCard: IChatGptCard;
+}

@@ -1,4 +1,4 @@
-async function getApiResponse(user_prompt: string) {
+export async function getApiResponse(user_prompt: string) {
   let chatgptOptions: ChatGptOptions = {
     open_ai_api_key: '',
     user_prompt_min_length: 0,
