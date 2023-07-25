@@ -14,8 +14,7 @@ const manifest = defineManifest(async (env) => ({
       js: [
         'api/openaiapi.ts',
         'content/content.ts',
-        'content/ui.ts'],
-      css: ['css/content.css'],
+        'content/ui.ts']
     },
   ],
   host_permissions: ['<all_urls>'],

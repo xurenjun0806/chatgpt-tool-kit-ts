@@ -1,4 +1,6 @@
+import '../css/content.css';
 import { getApiResponse } from '../api/openaiapi';
+
 const lfToBr = (text: string) => {
   return text.replace(/\n/g, '<br>');
 };

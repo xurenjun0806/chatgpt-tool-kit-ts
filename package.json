@@ -5,7 +5,7 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "vite-build": "npm run clean && tsc && vite build && npm run copy-assets",
+    "vite-build": "npm run clean && tsc && vite build",
     "build": "npm run clean && tsc && npm run copy-assets && npm run copy-webextension-polyfill",
     "copy-assets": "copyfiles -u 1 src/**/*.html src/**/*.css dist/",
     "copy-webextension-polyfill": "copyfiles -u 3 node_modules/webextension-polyfill/dist/browser-polyfill.js dist/",
